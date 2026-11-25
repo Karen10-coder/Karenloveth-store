@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Karen Loveth store | Online Shopping</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="announce">Luxury perfumes, jewellery &amp; more, delivered to your door</div>
+
+<header>
+  <div class="logo">
+    <h1>Karen Loveth</h1>
+    <span>Luxe &bull; Style &bull; Scent</span>
+  </div>
+
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Search for products...">
+    <button type="submit">&#128269;</button>
+  </form>
+
+  <div class="header-actions">
+    <button id="cart-button">&#128722; Cart <span id="cart-count">0</span></button>
+  </div>
+</header>
+
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+</nav>
+
+<main>
+
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div id="product-list" class="product-grid"></div>
+    </section>
+    <div class="order-bar">
+      <button onclick="orderOnWhatsapp()" class="btn">Order on WhatsApp</button>
+    </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Karen Loveth</h4>
+      <p>Luxury you can wear.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>WhatsApp: 07056801871</p>
+      <p>Ijebu-Ode, Nigeria</p>
+    </div>
+  </div>
+  <p class="copy">&copy; 2026 Karen Loveth store. All rights reserved</p>
+</footer>
+<script src="/static/script.js"></script>
+    </body>
+</html>
